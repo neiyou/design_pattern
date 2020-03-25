@@ -3,7 +3,7 @@
 ## 意图：
 定义一系列的算法，把他们一个个封装起来，并且使他们可互相替换。
 ## 主要解决：
-在有多种算法相似的情况下，使用if...else所带来的复杂和难以维护
+在有多种算法相似的情况下，使用if...else所带来的复杂和难以维护。
 ## 何时使用：
 一个系统有许多许多类，而区分它们的只是他们直接的行为。
 ## 如何解决：
@@ -21,7 +21,7 @@
 ## 注意事项：
 如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。
 ## 类图
-QuackBehavior、FlyBehavior 接口各定义了一个算法族，它们都具有 behavior() 方法。 
+QuackBehavior、FlyBehavior 接口各定义了一个算法族，它们都具有 behavior() 方法。  
 MallardDuck 是使用到该算法族的类，其中的 performFly、 performQuack会调用 behavior()， setFlyBehavior(FlyBehavior flyBehavior)、 setQuackBehavior(QuackBehavior quackBehavior)方法可以动态地改变 Duck 对象，也就是说能动态地改变 MallardDuck 所使用的算法。
 ![class](img/strategy_pattern.png)
 
