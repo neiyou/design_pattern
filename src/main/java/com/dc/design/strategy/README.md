@@ -21,4 +21,4 @@
 ## 注意事项：
 如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。
 ## 类图
-![class](./img/Strategy pattern.png)
+![class](img/strategy_pattern.png)
