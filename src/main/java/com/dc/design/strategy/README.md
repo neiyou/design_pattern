@@ -21,4 +21,7 @@
 ## 注意事项：
 如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。
 ## 类图
+QuackBehavior、FlyBehavior 接口各定义了一个算法族，它们都具有 behavior() 方法。 
+MallardDuck 是使用到该算法族的类，其中的 performFly、 performQuack会调用 behavior()， setFlyBehavior(FlyBehavior flyBehavior)、 setQuackBehavior(QuackBehavior quackBehavior)方法可以动态地改变 Duck 对象，也就是说能动态地改变 MallardDuck 所使用的算法。
 ![class](img/strategy_pattern.png)
+
