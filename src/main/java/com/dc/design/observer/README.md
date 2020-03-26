@@ -1,4 +1,4 @@
-# 观察者模式（Strategy pattern）
+# 观察者模式（Observer pattern）
 > 观察者模式(observer pattern): 在对象之间定义一对多的依赖, 这样一来, 当一个对象改变状态, 依赖它的对象都会收到通知, 并自动更新
 意图：定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新。
 
@@ -33,5 +33,5 @@
 主题(Subject)具有注册和移除观察者、并通知所有观察者的功能，主题是通过维护一张观察者列表来实现这些操作的。 观察者(Observer)的注册功能需要调用主题的 registerObserver() 方法。
 ![class](img/CurrentConditionsDisplay.png)
 
-DEMO:天气数据改变事 改变 通知CurrentConditionsDisplay+StatisticsDisplay 让他们做出相应改变。
+DEMO:天气数据布告板会在天气信息发生改变时更新其内容，布告板有多个，并且在将来会继续增加 =====>> 天气数据改变 -> 通知CurrentConditionsDisplay+StatisticsDisplay 让他们做出相应改变。
 
