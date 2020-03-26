@@ -26,3 +26,4 @@ QuackBehavior、FlyBehavior 接口各定义了一个算法族，它们都具有 
 MallardDuck 是使用到该算法族的类，其中的 performFly、 performQuack会调用 behavior()， setFlyBehavior(FlyBehavior flyBehavior)、 setQuackBehavior(QuackBehavior quackBehavior)方法可以动态地改变 Duck 对象，也就是说能动态地改变 MallardDuck 所使用的算法。
 ![class](img/strategy_pattern.png)
 
+DEMO:一个新出品的鸭子能够有丰富的行为(算法)，并且可以随时改变。
